@@ -1,18 +1,16 @@
-
 # Hi, I'm Umer! 👋
+
 ## Expense Tracker
 
 Its a simple expense tracker where you can add and remove your expenses with the name and amount of the expense. This will persist as everything will be saved in MongoDB database.
 
-
 ## 🚀 About Me
-I'm a full stack MERN developer...
 
+I'm a full stack MERN developer...
 
 ## Screenshots
 
-![App Screenshot](client/public/Screenshot 2023-12-16 143829.png)
-
+![App Screenshot](client/public/app.png)
 
 ## Run Locally
 
@@ -35,9 +33,9 @@ Start the server[in ROOT dir]
 ```bash
   npm run server
 ```
+
 Start the client[in client dir]
 
 ```bash
   npm run dev
 ```
-
