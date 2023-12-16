@@ -10,7 +10,7 @@ I'm a full stack MERN developer...
 
 ## Screenshots
 
-![App Screenshot]([client/public/app.png](https://github.com/umersagheer75/Expense-Tracker/blob/main/Client/public/app.png))
+![client/public/app.png](https://github.com/umersagheer75/Expense-Tracker/blob/main/Client/public/app.png)
 
 ## Run Locally
 
