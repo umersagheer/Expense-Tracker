@@ -7,6 +7,7 @@ exports.getTransactions = async (req, res, next) => {
     try {
         const transactions = await Transaction.find()
 
+
         return res.status(200).json({
             success: true,
             count: transactions.length,
@@ -55,20 +56,20 @@ exports.addTransaction = async (req, res, next) => {
 exports.deleteTransaction = async (req, res, next) => {
     try {
         const transaction = await Transaction.findById(req.params.id)
-        console.log(transaction)
 
         if (!transaction) {
-            return res.status(400).json({
+            return res.status(404).json({
                 success: false,
-                error: "No transaction found"
+                error: "Transaction not found"
             })
         }
 
-        await transaction.remove();
+        console.log(transaction)
+        const deleted = await transaction.deleteOne({ _id: req.params.id });
 
         return res.status(200).json({
             success: true,
-            data: transaction
+            data: { transaction, deleted }
         })
     } catch (error) {
         return res.status(500).json({
